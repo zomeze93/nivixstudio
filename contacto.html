@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - NIVIX STUDIO</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #F5FBEF; color: #32292F; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background: #92AD94; }
+    .logo { display: flex; align-items: center; text-decoration: none; color: #32292F; }
+    .logo img { height: 40px; margin-right: 10px; }
+    nav { position: relative; }
+    .menu-icon { font-size: 28px; cursor: pointer; }
+    .menu { display: none; position: absolute; right: 0; top: 40px; background: #748B75; border-radius: 5px; overflow: hidden; }
+    .menu a { display: block; padding: 10px 20px; color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .menu a:hover { background: #503D42; }
+    section { text-align: center; padding: 40px 20px; max-width: 600px; margin: 0 auto; }
+    input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+    button { padding: 10px 20px; background-color: #503D42; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+    button:hover { background-color: #32292F; }
+    footer { padding: 20px; background: #503D42; color: #fff; text-align: center; }
+    footer a { color: #fff; text-decoration: none; }
+  </style>
+</head>
+<body>
 
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/nivixLogo.png" alt="Logo NIVIX STUDIO">
+      <strong>NIVIX STUDIO</strong>
+    </a>
+    <nav>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="juego.html">Juego</a>
+        <a href="sobre.html">Sobre nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas, sugerencias o propuestas de colaboración? ¡Estamos encantados de escucharte!</p>
+    <form>
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>(Formulario no funcional por ahora, puedes escribirnos a <strong>nivixstudio@gmail.com</strong>)</p>
+  </section>
+
+  <footer>
+    <a href="https://x.com/nivixstudio?s=21&t=KxApS7LzXgJB5U8MIFky_w" target="_blank">Síguenos en X</a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
