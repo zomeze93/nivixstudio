@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Política de Privacidad | NIVIX Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="bg-blue-50 text-gray-900">
+    <header class="flex justify-between items-center p-4 shadow-md bg-white">
+      <a href="../index.html" class="flex items-center space-x-2">
+        <img src="../logo.png" alt="Logo NIVIX Studio" class="h-10" />
+        <span class="text-xl font-bold">NIVIX Studio</span>
+      </a>
+      <nav>
+        <button id="menu-toggle" class="text-2xl md:hidden">☰</button>
+        <ul id="menu" class="hidden md:flex space-x-6">
+          <li><a href="../index.html" class="hover:text-blue-500">Inicio</a></li>
+          <li><a href="../juegos/index.html" class="hover:text-blue-500">Juegos</a></li>
+          <li><a href="../sobre-nosotros/index.html" class="hover:text-blue-500">Sobre Nosotros</a></li>
+          <li><a href="../contacto/index.html" class="hover:text-blue-500">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6">
+      <h1 class="text-3xl font-bold mb-4">Política de Privacidad</h1>
+      <p class="mb-2">Última actualización: 16 de julio de 2025</p>
+
+      <p class="mb-4">
+        En NIVIX Studio valoramos tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tu información cuando utilizas nuestro juego "Clean Ocean". Al utilizar el juego, aceptas las prácticas descritas en esta política.
+      </p>
+
+      <h2 class="text-2xl font-semibold mt-6 mb-2">1. Información que recopilamos</h2>
+      <p class="mb-4">No recopilamos información personal directamente. Sin embargo, podemos usar servicios de terceros (como Unity Analytics o Google Play Services) que pueden recopilar información anónima para mejorar la experiencia del usuario.</p>
+
+      <h2 class="text-2xl font-semibold mt-6 mb-2">2. Uso de la información</h2>
+      <p class="mb-4">La información anónima recopilada se utiliza para entender cómo se usa el juego y para mejorar su rendimiento, funcionalidad y experiencia general.</p>
+
+      <h2 class="text-2xl font-semibold mt-6 mb-2">3. Compartir información</h2>
+      <p class="mb-4">No compartimos tu información personal con terceros. Cualquier información recopilada por servicios de terceros está sujeta a sus propias políticas de privacidad.</p>
+
+      <h2 class="text-2xl font-semibold mt-6 mb-2">4. Seguridad</h2>
+      <p class="mb-4">Nos esforzamos por proteger la información del usuario. Aunque no recopilamos datos personales, los servicios que utilizamos implementan medidas de seguridad para proteger cualquier información recopilada.</p>
+
+      <h2 class="text-2xl font-semibold mt-6 mb-2">5. Cambios en esta política</h2>
+      <p class="mb-4">Podemos actualizar esta Política de Privacidad ocasionalmente. Te notificaremos cualquier cambio publicando la nueva política en esta página.</p>
+
+      <h2 class="text-2xl font-semibold mt-6 mb-2">6. Contacto</h2>
+      <p>Si tienes alguna pregunta sobre esta Política de Privacidad, puedes contactarnos a través de la sección <a href="../contacto/index.html" class="text-blue-500 underline">Contacto</a> en nuestro sitio web.</p>
+    </main>
+
+    <footer class="text-center text-sm text-gray-500 py-6">
+      &copy; 2025 NIVIX Studio. Todos los derechos reservados.
+    </footer>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
