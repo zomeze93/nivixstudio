@@ -3,48 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NIVIX STUDIO</title>
+  <title>Juego - NIVIX STUDIO</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #F5FBEF; color: #32292F; text-align: center; }
-    header { padding: 40px 20px; }
-    .logo { max-width: 200px; margin-bottom: 20px; }
-    .tagline { font-size: 1.2rem; margin-top: 10px; }
-    section { padding: 40px 20px; }
-    .game-icon { max-width: 200px; margin: 20px 0; }
-    .gallery-img { width: 90%; max-width: 600px; margin: 10px 0; border-radius: 8px; }
-    .buttons { margin-top: 20px; }
-    .button { display: inline-block; padding: 10px 20px; margin: 10px; border: none; background: #92AD94; color: #fff; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
-    .button:hover { background: #748B75; }
-    .disabled { opacity: 0.5; pointer-events: none; }
-    footer { padding: 20px; background: #503D42; color: #fff; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #F5FBEF; color: #32292F; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background: #92AD94; }
+    .logo { display: flex; align-items: center; text-decoration: none; color: #32292F; }
+    .logo img { height: 40px; margin-right: 10px; }
+    nav { position: relative; }
+    .menu-icon { font-size: 28px; cursor: pointer; }
+    .menu { display: none; position: absolute; right: 0; top: 40px; background: #748B75; border-radius: 5px; overflow: hidden; }
+    .menu a { display: block; padding: 10px 20px; color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .menu a:hover { background: #503D42; }
+    section { text-align: center; padding: 40px 20px; }
+    img { max-width: 90%; margin: 20px 0; }
+    footer { padding: 20px; background: #503D42; color: #fff; text-align: center; }
     footer a { color: #fff; text-decoration: none; }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="images/nivixLogo.png" alt="NIVIX STUDIO logo" class="logo" />
-    <p class="tagline">Jugamos para crear un océano más limpio y un mundo más divertido.</p>
+    <a href="index.html" class="logo">
+      <img src="images/nivixLogo.png" alt="Logo NIVIX STUDIO">
+      <strong>NIVIX STUDIO</strong>
+    </a>
+    <nav>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="juego.html">Juego</a>
+        <a href="sobre.html">Sobre nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </nav>
   </header>
 
   <section>
-    <h2>Sobre nosotros</h2>
-    <p>Creamos juegos divertidos y con conciencia social.</p>
-  </section>
-
-  <section>
-    <h2>Nuestro juego</h2>
-    <img src="images/E6D153AE-445B-427E-96E6-3668641D3C1B.png" alt="Icono del juego" class="game-icon" />
-    <p>Nuestro primer juego invita a sumergirse en el océano para recoger basura y salvar la vida marina, mientras esquivas tiburones hambrientos. ¡Atrévete a limpiar el mar y superar tu puntuación!</p>
-    <img src="images/Captura.jpeg" alt="Captura del juego" class="gallery-img" />
-    <div class="buttons">
-      <a href="#" class="button disabled">Google Play (Próximamente)</a>
-      <a href="#" class="button disabled">App Store (Próximamente)</a>
-      <a href="politica.html" class="button">Política de privacidad</a>
-    </div>
+    <h2>Clean Ocean Diver</h2>
+    <p>Ayuda a limpiar el océano recogiendo basura y esquivando tiburones. ¡Un endless runner divertido y con conciencia ambiental!</p>
+    <img src="images/Captura.jpeg" alt="Captura del juego">
+    <p><a href="https://play.google.com/store" target="_blank">Descargar en Google Play</a> | <a href="https://www.apple.com/app-store/" target="_blank">Descargar en App Store</a></p>
+    <p><a href="privacidad.html">Política de privacidad</a></p>
   </section>
 
   <footer>
     <a href="https://x.com/nivixstudio?s=21&t=KxApS7LzXgJB5U8MIFky_w" target="_blank">Síguenos en X</a>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
 </body>
 </html>
