@@ -5,19 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NIVIX STUDIO</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #F5FBEF; color: #32292F; }
-    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background: #92AD94; }
-    .logo { display: flex; align-items: center; text-decoration: none; color: #32292F; }
-    .logo img { height: 40px; margin-right: 10px; }
-    nav { position: relative; }
-    .menu-icon { font-size: 28px; cursor: pointer; }
-    .menu { display: none; position: absolute; right: 0; top: 40px; background: #748B75; border-radius: 5px; overflow: hidden; }
-    .menu a { display: block; padding: 10px 20px; color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-    .menu a:hover { background: #503D42; }
-    section { text-align: center; padding: 40px 20px; }
-    .game-icon { max-width: 200px; margin: 20px auto; cursor: pointer; display: block; }
-    footer { padding: 20px; background: #503D42; color: #fff; text-align: center; }
-    footer a { color: #fff; text-decoration: none; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #F5FBEF;
+      color: #32292F;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #92AD94;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #32292F;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      background: #748B75;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .menu a {
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu a:hover {
+      background: #503D42;
+    }
+
+    section {
+      text-align: center;
+      padding: 40px 20px 20px;
+      flex-grow: 1;
+    }
+
+    section h2 {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .game-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .game-icon {
+      max-width: 200px;
+      margin: 0 auto;
+      cursor: pointer;
+      display: block;
+    }
+
+    footer {
+      padding: 20px;
+      background: #503D42;
+      color: #fff;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -39,7 +127,8 @@
   </header>
 
   <section>
-    <h2>Creamos experiencias divertidas, originales y con impacto positivo.</h2>
+    <h2><em>Creamos experiencias divertidas, originales y con impacto positivo.</em></h2>
+    <div class="game-title">Clean Ocean</div>
     <a href="juego.html">
       <img src="images/E6D153AE-445B-427E-96E6-3668641D3C1B.png" alt="Juego" class="game-icon" />
     </a>
