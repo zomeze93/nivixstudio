@@ -5,18 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sobre Nosotros - NIVIX STUDIO</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #F5FBEF; color: #32292F; }
-    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background: #92AD94; }
-    .logo { display: flex; align-items: center; text-decoration: none; color: #32292F; }
-    .logo img { height: 40px; margin-right: 10px; }
-    nav { position: relative; }
-    .menu-icon { font-size: 28px; cursor: pointer; }
-    .menu { display: none; position: absolute; right: 0; top: 40px; background: #748B75; border-radius: 5px; overflow: hidden; }
-    .menu a { display: block; padding: 10px 20px; color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-    .menu a:hover { background: #503D42; }
-    section { text-align: center; padding: 40px 20px; max-width: 700px; margin: 0 auto; }
-    footer { padding: 20px; background: #503D42; color: #fff; text-align: center; }
-    footer a { color: #fff; text-decoration: none; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #F5FBEF;
+      color: #32292F;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #92AD94;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #32292F;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav {
+      position: relative;
+    }
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      background: #748B75;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .menu a {
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .menu a:hover {
+      background: #503D42;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    footer {
+      padding: 20px;
+      background: #503D42;
+      color: #fff;
+      text-align: center;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -37,11 +98,11 @@
     </nav>
   </header>
 
-  <section>
+  <main>
     <h2>Sobre nosotros</h2>
     <p>NIVIX STUDIO nace con la misión de crear videojuegos que no solo entretengan, sino que también inspiren, enseñen y despierten conciencia. Somos un estudio independiente comprometido con la creatividad, la diversión y el impacto positivo.</p>
     <p>Desarrollamos juegos accesibles, originales y pensados para todo tipo de jugadores. Nos mueve la pasión por contar historias que conecten, mundos que sorprendan y mecánicas que diviertan.</p>
-  </section>
+  </main>
 
   <footer>
     <a href="https://x.com/nivixstudio?s=21&t=KxApS7LzXgJB5U8MIFky_w" target="_blank">Síguenos en X</a>
