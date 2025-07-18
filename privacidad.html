@@ -1,68 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Política de Privacidad | NIVIX Studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
-  </head>
-  <body class="bg-blue-50 text-gray-900">
-    <header class="flex justify-between items-center p-4 shadow-md bg-white">
-      <a href="../index.html" class="flex items-center space-x-2">
-        <img src="../logo.png" alt="Logo NIVIX Studio" class="h-10" />
-        <span class="text-xl font-bold">NIVIX Studio</span>
-      </a>
-      <nav>
-        <button id="menu-toggle" class="text-2xl md:hidden">☰</button>
-        <ul id="menu" class="hidden md:flex space-x-6">
-          <li><a href="../index.html" class="hover:text-blue-500">Inicio</a></li>
-          <li><a href="../juego/index.html" class="hover:text-blue-500">Juegos</a></li>
-          <li><a href="../sobre/index.html" class="hover:text-blue-500">Sobre Nosotros</a></li>
-          <li><a href="../contacto/index.html" class="hover:text-blue-500">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad - NIVIX STUDIO</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      font-family: Arial, sans-serif;
+      background: #F5FBEF;
+      color: #32292F;
+      display: flex;
+      flex-direction: column;
+    }
 
-    <main class="max-w-4xl mx-auto p-6">
-      <h1 class="text-3xl font-bold mb-4">Política de Privacidad</h1>
-      <p class="mb-2">Última actualización: 16 de julio de 2025</p>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #92AD94;
+    }
 
-      <p class="mb-4">
-        En NIVIX Studio valoramos tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tu información cuando utilizas nuestro juego "Clean Ocean". Al utilizar el juego, aceptas las prácticas descritas en esta política.
-      </p>
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #32292F;
+    }
 
-      <h2 class="text-2xl font-semibold mt-6 mb-2">1. Información que recopilamos</h2>
-      <p class="mb-4">No recopilamos información personal directamente. Sin embargo, podemos usar servicios de terceros (como Unity Analytics o Google Play Services) que pueden recopilar información anónima para mejorar la experiencia del usuario.</p>
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
 
-      <h2 class="text-2xl font-semibold mt-6 mb-2">2. Uso de la información</h2>
-      <p class="mb-4">La información anónima recopilada se utiliza para entender cómo se usa el juego y para mejorar su rendimiento, funcionalidad y experiencia general.</p>
+    nav {
+      position: relative;
+    }
 
-      <h2 class="text-2xl font-semibold mt-6 mb-2">3. Compartir información</h2>
-      <p class="mb-4">No compartimos tu información personal con terceros. Cualquier información recopilada por servicios de terceros está sujeta a sus propias políticas de privacidad.</p>
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+    }
 
-      <h2 class="text-2xl font-semibold mt-6 mb-2">4. Seguridad</h2>
-      <p class="mb-4">Nos esforzamos por proteger la información del usuario. Aunque no recopilamos datos personales, los servicios que utilizamos implementan medidas de seguridad para proteger cualquier información recopilada.</p>
+    .menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      background: #748B75;
+      border-radius: 5px;
+      overflow: hidden;
+    }
 
-      <h2 class="text-2xl font-semibold mt-6 mb-2">5. Cambios en esta política</h2>
-      <p class="mb-4">Podemos actualizar esta Política de Privacidad ocasionalmente. Te notificaremos cualquier cambio publicando la nueva política en esta página.</p>
+    .menu a {
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
-      <h2 class="text-2xl font-semibold mt-6 mb-2">6. Contacto</h2>
-      <p>Si tienes alguna pregunta sobre esta Política de Privacidad, puedes contactarnos a través de la sección <a href="../contacto/index.html" class="text-blue-500 underline">Contacto</a> en nuestro sitio web.</p>
-    </main>
+    .menu a:hover {
+      background: #503D42;
+    }
 
-    <footer class="text-center text-sm text-gray-500 py-6">
-      &copy; 2025 NIVIX Studio. Todos los derechos reservados.
-    </footer>
+    section {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-    <script>
-      const toggle = document.getElementById("menu-toggle");
-      const menu = document.getElementById("menu");
-      toggle.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-    </script>
-  </body>
+    footer {
+      padding: 20px;
+      background: #503D42;
+      color: #fff;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo NIVIX STUDIO">
+      <strong>NIVIX STUDIO</strong>
+    </a>
+    <nav>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="menu" id="menu">
+        <a href="index.html">Home</a>
+        <a href="juego.html">Juego</a>
+        <a href="sobre.html">Sobre nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Política de Privacidad</h2>
+    <p>En NIVIX STUDIO, respetamos tu privacidad. Esta sección se actualizará próximamente con detalles sobre el tratamiento de datos de usuarios en nuestras aplicaciones y sitio web.</p>
+    <p>Si tienes preguntas, puedes contactarnos directamente desde la sección de contacto.</p>
+  </section>
+
+  <footer>
+    <a href="https://x.com/nivixstudio?s=21&t=KxApS7LzXgJB5U8MIFky_w" target="_blank">Síguenos en X</a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+</body>
 </html>
