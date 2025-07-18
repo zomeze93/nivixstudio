@@ -5,13 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NIVIX STUDIO</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #F5FBEF;
       color: #32292F;
@@ -19,7 +14,6 @@
       flex-direction: column;
       min-height: 100vh;
     }
-
     header {
       display: flex;
       justify-content: space-between;
@@ -27,28 +21,23 @@
       padding: 15px 30px;
       background: #92AD94;
     }
-
     .logo {
       display: flex;
       align-items: center;
       text-decoration: none;
       color: #32292F;
     }
-
     .logo img {
       height: 40px;
       margin-right: 10px;
     }
-
     nav {
       position: relative;
     }
-
     .menu-icon {
       font-size: 28px;
       cursor: pointer;
     }
-
     .menu {
       display: none;
       position: absolute;
@@ -58,7 +47,6 @@
       border-radius: 5px;
       overflow: hidden;
     }
-
     .menu a {
       display: block;
       padding: 10px 20px;
@@ -66,42 +54,46 @@
       text-decoration: none;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
-
     .menu a:hover {
       background: #503D42;
     }
-
+    main {
+      flex: 1;
+    }
     section {
       text-align: center;
       padding: 40px 20px 20px;
-      flex-grow: 1;
     }
-
-    section h2 {
+    .slogan {
       font-style: italic;
-      margin-bottom: 10px;
+      margin-bottom: 50px;
+      font-size: 1.2rem;
     }
-
-    .game-title {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
     .game-icon {
       max-width: 200px;
-      margin: 0 auto;
-      cursor: pointer;
+      margin: 0 auto 10px;
       display: block;
     }
-
+    .game-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #92AD94;
+      color: #32292F;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+    .game-button:hover {
+      background-color: #748B75;
+    }
     footer {
       padding: 20px;
       background: #503D42;
       color: #fff;
       text-align: center;
     }
-
     footer a {
       color: #fff;
       text-decoration: none;
@@ -126,13 +118,17 @@
     </nav>
   </header>
 
-  <section>
-    <h2><em>Creamos experiencias divertidas, originales y con impacto positivo.</em></h2>
-    <div class="game-title">Clean Ocean</div>
-    <a href="juego.html">
-      <img src="images/E6D153AE-445B-427E-96E6-3668641D3C1B.png" alt="Juego" class="game-icon" />
-    </a>
-  </section>
+  <main>
+    <section>
+      <h2 class="slogan">Creamos experiencias divertidas, originales y con impacto positivo.</h2>
+      <a href="juego.html">
+        <img src="images/E6D153AE-445B-427E-96E6-3668641D3C1B.png" alt="Juego" class="game-icon" />
+      </a>
+      <div>
+        <a href="juego.html" class="game-button">Clean Ocean</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <a href="https://x.com/nivixstudio?s=21&t=KxApS7LzXgJB5U8MIFky_w" target="_blank">Síguenos en X</a>
