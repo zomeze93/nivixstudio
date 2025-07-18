@@ -5,21 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contacto - NIVIX STUDIO</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #F5FBEF; color: #32292F; }
-    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background: #92AD94; }
-    .logo { display: flex; align-items: center; text-decoration: none; color: #32292F; }
-    .logo img { height: 40px; margin-right: 10px; }
-    nav { position: relative; }
-    .menu-icon { font-size: 28px; cursor: pointer; }
-    .menu { display: none; position: absolute; right: 0; top: 40px; background: #748B75; border-radius: 5px; overflow: hidden; }
-    .menu a { display: block; padding: 10px 20px; color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
-    .menu a:hover { background: #503D42; }
-    section { text-align: center; padding: 40px 20px; max-width: 600px; margin: 0 auto; }
-    input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
-    button { padding: 10px 20px; background-color: #503D42; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
-    button:hover { background-color: #32292F; }
-    footer { padding: 20px; background: #503D42; color: #fff; text-align: center; }
-    footer a { color: #fff; text-decoration: none; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #F5FBEF;
+      color: #32292F;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #92AD94;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #32292F;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav {
+      position: relative;
+    }
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 40px;
+      background: #748B75;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .menu a {
+      display: block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .menu a:hover {
+      background: #503D42;
+    }
+
+    section {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      flex: 1; /* Ocupa el espacio restante */
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #503D42;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #32292F;
+    }
+
+    footer {
+      padding: 20px;
+      background: #503D42;
+      color: #fff;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
